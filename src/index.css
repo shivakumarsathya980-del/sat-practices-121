@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-900 antialiased min-h-screen selection:bg-indigo-500 selection:text-white;
+  }
+}
+
+/* Modern Background Mesh & Pattern Grid */
+.bg-sat-grid {
+  background-color: #0b0f19;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.10) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+    radial-gradient(#1e293b 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+}
+
+.bg-sat-light-grid {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.06) 0px, transparent 40%),
+    radial-gradient(at 100% 0%, rgba(147, 51, 234, 0.05) 0px, transparent 40%),
+    radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.04) 0px, transparent 50%),
+    radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px;
+}
+
+/* Glassmorphism & Soft Glow Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.7);
+}
+
